@@ -1,87 +1,79 @@
 export function Projects() {
-   return(
-<section className="px-4 py-16 sm:px-6 lg:px-8">
-  <div className="mx-auto max-w-7xl">
-    
-    <div className="mb-16 text-center">
-      <h2 className="mt-2 text-4xl font-bold text-gray-900 sm:text-5xl">Atividades feitas</h2>
-      <div className="mx-auto mt-6 h-1 w-20 bg-blue-600"></div>
-    </div>
+  return (
+    <section id="projects" className="px-4 py-20 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+      <div className="mx-auto max-w-7xl">
 
-   
-    <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-      
-      <div className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl">
-        <div className="h-64 overflow-hidden">
-          <img src="dentes.png" alt="UI Design Project" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+        {/* Título */}
+        <div className="mb-16 text-center">
+          <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl">Atividades feitas</h2>
+          <div className="mx-auto mt-4 h-1 w-24 bg-blue-600 rounded-full"></div>
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
+            Durante a graduação, desenvolvi diversas atividades práticas que marcaram minha formação. Veja algumas delas:
+          </p>
         </div>
-        <div className="absolute inset-0 flex items-end bg-gradient-to-t from-gray-900 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-90">
-          <div className="translate-y-8 transform transition-transform duration-300 group-hover:translate-y-0">
-            <h3 className="text-2xl font-bold text-white">Modern UI Design</h3>
-            <p className="mt-2 text-gray-300">Clean, minimalist interface design for a SaaS application.</p>
-            <div className="mt-4 flex space-x-2">
-              <span className="rounded-full bg-blue-600 px-3 py-1 text-xs font-semibold text-white">UI/UX</span>
-              <span className="rounded-full bg-purple-600 px-3 py-1 text-xs font-semibold text-white">Figma</span>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+          
+          {/* Card 1 */}
+          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800">
+            <div className="h-64 overflow-hidden">
+              <img
+                src="dentes.png"
+                alt="Trabalho com dentes de cera"
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
-            <a href="#" className="mt-4 inline-flex items-center text-white transition-colors hover:text-blue-300">
-              View Project
-              <i className="fas fa-arrow-right ml-2"></i>
-            </a>
+            <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="translate-y-8 transform transition-transform duration-300 group-hover:translate-y-0">
+                <h3 className="text-2xl font-bold text-white">Dentes em cera</h3>
+                <p className="mt-2 text-gray-300 text-sm">
+                  Modelagem anatômica de dentes em cera no primeiro período da faculdade. Importante para o estudo das estruturas dentárias.
+                </p>
+              </div>
+            </div>
           </div>
+
+          {/* Card 2 */}
+          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800">
+            <div className="h-64 overflow-hidden">
+              <img
+                src="atividade2.png"
+                alt="Prática laboratorial"
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="translate-y-8 transform transition-transform duration-300 group-hover:translate-y-0">
+                <h3 className="text-2xl font-bold text-white">Prática laboratorial</h3>
+                <p className="mt-2 text-gray-300 text-sm">
+                  Treinando técnicas com precisão e paciência no laboratório, essenciais para o desenvolvimento profissional na Odontologia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800">
+            <div className="h-64 overflow-hidden">
+              <img
+                src="atividade3.png"
+                alt="Anatomia dental"
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="translate-y-8 transform transition-transform duration-300 group-hover:translate-y-0">
+                <h3 className="text-2xl font-bold text-white">Estudo da anatomia dental</h3>
+                <p className="mt-2 text-gray-300 text-sm">
+                  Um passo importante na construção do conhecimento anatômico e técnico necessário para atuar com excelência.
+                </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-
-      
-      <div className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl">
-        <div className="h-64 overflow-hidden">
-          <img src="https://placehold.co/600x400" alt="Mobile App Project" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
-        </div>
-        <div className="absolute inset-0 flex items-end bg-gradient-to-t from-gray-900 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-90">
-          <div className="translate-y-8 transform transition-transform duration-300 group-hover:translate-y-0">
-            <h3 className="text-2xl font-bold text-white">Fitness Mobile App</h3>
-            <p className="mt-2 text-gray-300">Cross-platform fitness tracking application with social features.</p>
-            <div className="mt-4 flex space-x-2">
-              <span className="rounded-full bg-green-600 px-3 py-1 text-xs font-semibold text-white">React Native</span>
-              <span className="rounded-full bg-red-600 px-3 py-1 text-xs font-semibold text-white">Health</span>
-            </div>
-            <a href="#" className="mt-4 inline-flex items-center text-white transition-colors hover:text-blue-300">
-              View Project
-              <i className="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      
-      <div className="group relative overflow-hidden rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl">
-        <div className="h-64 overflow-hidden">
-          <img src="https://placehold.co/600x400" alt="E-commerce Project" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
-        </div>
-        <div className="absolute inset-0 flex items-end bg-gradient-to-t from-gray-900 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-90">
-          <div className="translate-y-8 transform transition-transform duration-300 group-hover:translate-y-0">
-            <h3 className="text-2xl font-bold text-white">E-commerce Platform</h3>
-            <p className="mt-2 text-gray-300">Custom online store with integrated payment processing.</p>
-            <div className="mt-4 flex space-x-2">
-              <span className="rounded-full bg-yellow-600 px-3 py-1 text-xs font-semibold text-white">Shopify</span>
-              <span className="rounded-full bg-indigo-600 px-3 py-1 text-xs font-semibold text-white">Payment</span>
-            </div>
-            <a href="#" className="mt-4 inline-flex items-center text-white transition-colors hover:text-blue-300">
-              View Project
-              <i className="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   
-    <div className="mt-16 text-center">
-      <a href="#" className="inline-flex items-center rounded-full border border-blue-600 px-8 py-3 text-base font-medium text-blue-600 transition-colors duration-300 hover:bg-blue-600 hover:text-white">
-        
-        <i className="fas fa-long-arrow-alt-right ml-3"></i>
-      </a>
-    </div>
-  </div>
-</section>
-   )
+    </section>
+  );
 }
