@@ -1,6 +1,6 @@
 export function About() {
     return (
-      <section id="about" className="pt-28 pb-20 bg-white dark:bg-gray-800">
+      <section id="about" className="pt-28 pb-20 h-screen w-screen bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-6 grid items-center grid-cols-1 md:grid-cols-2 gap-12">
           {/* Texto */}
           <div>
