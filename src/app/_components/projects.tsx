@@ -1,6 +1,6 @@
 export function Projects() {
   return (
-    <section id="projects" className="px-4 py-20 h-screen w-screen sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+    <section id="projects" className="h-screen w-screen overflow-y-auto px-4 py-20 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
       <div className="mx-auto max-w-7xl">
 
         {/* Título */}
@@ -66,13 +66,14 @@ export function Projects() {
               <div className="translate-y-8 transform transition-transform duration-300 group-hover:translate-y-0">
                 <h3 className="text-2xl font-bold text-white">Estudo da anatomia dental</h3>
                 <p className="mt-2 text-gray-300 text-sm">
-                  Um passo importante na construção do conhecimento anatômico e técnico necessário para atuar com excelência.
+                  Conhecimento anatômico e técnico necessário para atuar com excelência em todas as especialidades odontológicas.
                 </p>
               </div>
             </div>
           </div>
 
         </div>
+
       </div>
     </section>
   );

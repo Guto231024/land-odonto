@@ -1,16 +1,18 @@
 export function Contacts() {
   return (
-    <section id="contacts" className="bg-white h-screen w-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <section
+      id="contacts"
+      className="h-screen w-screen flex items-center justify-center bg-white px-4 sm:px-6 lg:px-8"
+    >
       <div className="max-w-3xl mx-auto text-center">
-        
         <h2 className="text-4xl font-extrabold text-blue-900 sm:text-5xl">
           Vamos conversar?
         </h2>
         <p className="mt-4 text-lg text-gray-600">
-          Se você quer agendar um atendimento, tirar dúvidas ou apenas bater um papo sobre odontologia, estou à disposição! 💙
+          Se você quer agendar um atendimento, tirar dúvidas ou apenas bater um papo
+          sobre odontologia, estou à disposição! 💙
         </p>
 
-        {/* Botão WhatsApp */}
         <div className="mt-10">
           <a
             href="https://wa.me/+5524981128435"
@@ -22,7 +24,6 @@ export function Contacts() {
           </a>
         </div>
 
-        {/* Alternativa - redes sociais */}
         <p className="mt-6 text-gray-500 text-sm">
           Ou me chame no Instagram:&nbsp;
           <a
@@ -34,7 +35,6 @@ export function Contacts() {
             @amandalucchifov
           </a>
         </p>
-
       </div>
     </section>
   );
