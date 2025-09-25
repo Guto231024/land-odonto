@@ -1,6 +1,6 @@
 export function Service() {
   return (
-    <section id="services" className="h-screen w-screen overflow-y-auto px-4 py-20 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="services" className="h-screen w-screen overflow-y-auto px-4 py-20 sm:px-6 lg:px-8 bg-fffff">
       <div className="mx-auto max-w-7xl">
 
         {/* Título principal */}

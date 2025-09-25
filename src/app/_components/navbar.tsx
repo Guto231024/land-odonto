@@ -17,6 +17,11 @@ export function Hero() {
               </a>
             </li>
             <li>
+              <a href="#instagram" className="hover:underline hover:text-sky-600">
+                Post do Instagram
+              </a>
+            </li>
+            <li>
               <a href="#contacts" className="hover:underline hover:text-sky-600">
                 Contato
               </a>

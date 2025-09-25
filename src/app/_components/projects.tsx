@@ -34,26 +34,26 @@ export function Projects() {
             </div>
           </div>
 
-          {/* Card 2 */}
-          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800">
+          {/* Card 2 (MEIO CINZA) */}
+          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gray-100 dark:bg-gray-800">
             <div className="h-64 overflow-hidden">
               <img
-                src="atividade2.png"
+                src="moldagem.png"
                 alt="Prática laboratorial"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <div className="translate-y-8 transform transition-transform duration-300 group-hover:translate-y-0">
-                <h3 className="text-2xl font-bold text-white">Prática laboratorial</h3>
+                <h3 className="text-2xl font-bold text-white">Moldagem no Alginato</h3>
                 <p className="mt-2 text-gray-300 text-sm">
-                  Treinando técnicas com precisão e paciência no laboratório, essenciais para o desenvolvimento profissional na Odontologia.
+                Realizando moldagem com alginato, um procedimento essencial para a confecção de modelos precisos. Uma etapa importante que exige cuidado, agilidade e técnicas fundamentais para a prática clínica na Odontologia.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Card 3 */}
+          {/* Card 3 (BRANCO) */}
           <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800">
             <div className="h-64 overflow-hidden">
               <img
