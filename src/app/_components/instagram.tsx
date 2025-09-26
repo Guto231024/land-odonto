@@ -27,7 +27,7 @@ export function Instagram() {
   return (
     <section
       id="instagram"
-      className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 flex flex-col"
+      className="min-h-screen w-full py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 flex flex-col overflow-x-hidden"
     >
       <div className="max-w-7xl mx-auto mb-12 text-center">
         <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl">
@@ -39,11 +39,11 @@ export function Instagram() {
       </div>
 
       {/* Grid de posts alinhados à esquerda */}
-      <div className="max-w-7xl mx-auto flex flex-row gap-8 justify-start items-start flex-wrap">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-start items-start">
         {posts.map((post, idx) => (
           <div
             key={idx}
-            className="w-full sm:w-96 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg overflow-hidden flex-shrink-0"
+            className="w-full bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 shadow-lg overflow-hidden flex-shrink-0 flex flex-col mx-auto"
             style={{ maxWidth: 384 }}
           >
             {/* Cabeçalho com avatar e nome */}
@@ -68,7 +68,8 @@ export function Instagram() {
               <img
                 src={post.img}
                 alt={post.alt}
-                className="w-full object-cover transition-transform duration-500 hover:scale-105"
+                className="w-full object-cover transition-transform duration-500 hover:scale-105 max-h-80 sm:max-h-64 md:max-h-72 lg:max-h-80"
+                style={{ aspectRatio: '1/1', objectFit: 'cover' }}
               />
             </a>
             {/* Legenda adaptada */}

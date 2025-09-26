@@ -1,6 +1,6 @@
 export function Projects() {
   return (
-    <section id="projects" className="h-screen w-screen overflow-y-auto px-4 py-20 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+  <section id="projects" className="min-h-screen w-full overflow-y-auto px-4 py-20 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900 overflow-x-hidden">
       <div className="mx-auto max-w-7xl">
 
         {/* Título */}
@@ -13,11 +13,11 @@ export function Projects() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           
           {/* Card 1 */}
-          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800">
-            <div className="h-64 overflow-hidden">
+          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800 flex flex-col">
+            <div className="h-56 sm:h-64 md:h-56 lg:h-64 overflow-hidden">
               <img
                 src="dentes.png"
                 alt="Trabalho com dentes de cera"
@@ -35,8 +35,8 @@ export function Projects() {
           </div>
 
           {/* Card 2 (MEIO CINZA) */}
-          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gray-100 dark:bg-gray-800">
-            <div className="h-64 overflow-hidden">
+          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-gray-100 dark:bg-gray-800 flex flex-col">
+            <div className="h-56 sm:h-64 md:h-56 lg:h-64 overflow-hidden">
               <img
                 src="moldagem.png"
                 alt="Prática laboratorial"
@@ -54,8 +54,8 @@ export function Projects() {
           </div>
 
           {/* Card 3 (BRANCO) */}
-          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800">
-            <div className="h-64 overflow-hidden">
+          <div className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 bg-white dark:bg-gray-800 flex flex-col">
+            <div className="h-56 sm:h-64 md:h-56 lg:h-64 overflow-hidden">
               <img
                 src="vacuo.png"
                 alt="Anatomia dental"

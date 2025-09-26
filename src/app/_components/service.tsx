@@ -1,6 +1,6 @@
 export function Service() {
   return (
-    <section id="services" className="h-screen w-screen overflow-y-auto px-4 py-20 sm:px-6 lg:px-8 bg-fffff">
+  <section id="services" className="min-h-screen w-full overflow-y-auto px-4 py-20 sm:px-6 lg:px-8 bg-fffff overflow-x-hidden">
       <div className="mx-auto max-w-7xl">
 
         {/* Título principal */}
@@ -15,11 +15,11 @@ export function Service() {
         </div>
 
         {/* Grid de cards */}
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           {/* Card 1 */}
-          <div className="group relative overflow-hidden rounded-3xl shadow-lg transition-all duration-300 hover:shadow-2xl bg-white">
-            <div className="h-64 overflow-hidden">
+          <div className="group relative overflow-hidden rounded-3xl shadow-lg transition-all duration-300 hover:shadow-2xl bg-white flex flex-col">
+            <div className="h-56 sm:h-64 md:h-56 lg:h-64 overflow-hidden">
               <img
                 src="atendimento1.png"
                 alt="Primeiro atendimento odontológico"
@@ -37,8 +37,8 @@ export function Service() {
           </div>
 
           {/* Card 2 */}
-          <div className="group relative overflow-hidden rounded-3xl shadow-lg transition-all duration-300 hover:shadow-2xl bg-white">
-            <div className="h-64 overflow-hidden">
+          <div className="group relative overflow-hidden rounded-3xl shadow-lg transition-all duration-300 hover:shadow-2xl bg-white flex flex-col">
+            <div className="h-56 sm:h-64 md:h-56 lg:h-64 overflow-hidden">
               <img
                 src="atendimento2.png"
                 alt="Atendimento entre colegas"
@@ -56,8 +56,8 @@ export function Service() {
           </div>
 
           {/* Card 3 */}
-          <div className="group relative overflow-hidden rounded-3xl shadow-lg transition-all duration-300 hover:shadow-2xl bg-white">
-            <div className="h-64 overflow-hidden">
+          <div className="group relative overflow-hidden rounded-3xl shadow-lg transition-all duration-300 hover:shadow-2xl bg-white flex flex-col">
+            <div className="h-56 sm:h-64 md:h-56 lg:h-64 overflow-hidden">
               <img
                 src="atendimento3.png"
                 alt="Atendimento escolar"

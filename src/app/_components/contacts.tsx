@@ -2,9 +2,9 @@ export function Contacts() {
   return (
     <section
       id="contacts"
-      className="h-screen w-screen flex items-center justify-center bg-white px-4 sm:px-6 lg:px-8"
+      className="min-h-screen w-full flex items-center justify-center bg-white px-4 sm:px-6 lg:px-8 overflow-x-hidden"
     >
-      <div className="max-w-3xl mx-auto text-center">
+      <div className="w-full max-w-3xl mx-auto text-center flex flex-col items-center justify-center py-10">
         <h2 className="text-4xl font-extrabold text-blue-900 sm:text-5xl">
           Vamos conversar?
         </h2>
